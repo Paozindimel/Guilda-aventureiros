@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Guilda dos Aventureiros</h1>
+        <div class="logo">
+            <img src="./img/guilda logo.gif" alt="Guilda Logo">
+        </div>
+        <a href="https://www.youtube.com/@Beaaaaaaa_a" target="_blank">
+            <img src="./img/YOU.png" alt="Canal no YouTube" class="youtube-logo">
+        </a>
+        
+        <h1>SE INCREVA </h1>
+        
+        <table>
+            <tr>
+                <th>Monstro</th>
+                <th>Progresso</th>
+                <th>Quantos matou</th>
+            </tr>
+            <tr>
+                <td>
+                    Gosmas
+                    <br>
+                    <!-- Colocando a imagem dentro de uma célula de tabela -->
+                    <img src="./img/gosma.png" alt="gosma">
+                </td>
+                <td><span id="gosmasValue">0%</span> (<span id="gosmasPoints">0</span>/1000)</td>
+                <td>
+                    <button onclick="updateQuantity('gosmas', 1)">▲</button>
+                    <span id="gosmasQuantity">0</span>
+                    <button onclick="updateQuantity('gosmas', -1)">▼</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Bruto das sombras
+                    <br>
+                    <img src="./img/bruxo.png" alt="bruto das sombras">
+                </td>
+                <td><span id="brutoDasSombrasValue">0%</span> (<span id="brutoDasSombrasPoints">0</span>/150)</td>
+                <td>
+                    <button onclick="updateQuantity('brutoDasSombras', 1)">▲</button>
+                    <span id="brutoDasSombrasQuantity">0</span>
+                    <button onclick="updateQuantity('brutoDasSombras', -1)">▼</button>
+                </td>
+                <tr>   
+                <td>
+                    Morcego
+                    <br>
+                    <img src="./img/morcego.png" alt="morcego">
+                </td>
+                <td><span id="morcegoValue">0%</span> (<span id="morcegoPoints">0</span>/200)</td>
+                <td>
+                    <button onclick="updateQuantity('morcego', 1)">▲</button>
+                    <span id="morcegoQuantity">0</span>
+                    <button onclick="updateQuantity('morcego', -1)">▼</button>
+                </td>
+                <tr>
+                <td>
+                    Esqueleto
+                    <br>
+                    <img src="./img/esqueleto.png" alt="esqueleto">
+                </td>
+                <td><span id="esqueletoValue">0%</span> (<span id="esqueletoPoints">0</span>/50)</td>
+                <td>
+                    <button onclick="updateQuantity('esqueleto', 1)">▲</button>
+                    <span id="esqueletoQuantity">0</span>
+                    <button onclick="updateQuantity('esqueleto', -1)">▼</button>
+                </td>
+                <tr>
+                <td>
+                    Inseto
+                    <br>
+                    <img src="./img/inseto.png" alt="inseto">
+                </td>
+                <td><span id="insetoValue">0%</span> (<span id="insetoPoints">0</span>/125	
+                    )</td>
+                <td>
+                    <button onclick="updateQuantity('inseto', 1)">▲</button>
+                    <span id="insetoQuantity">0</span>
+                    <button onclick="updateQuantity('inseto', -1)">▼</button>
+                </td>
+                <tr>
+                <td>
+                    Cavador
+                    <br>
+                    <img src="./img/cavador.png" alt="cavador">
+                </td>
+                <td><span id="cavadorValue">0%</span> (<span id="cavadorPoints">0</span>/30)</td>
+                <td>
+                    <button onclick="updateQuantity('cavador', 1)">▲</button>
+                    <span id="cavadorQuantity">0</span>
+                    <button onclick="updateQuantity('cavador', -1)">▼</button>
+                </td>
+                <tr>
+                <td>
+                    Espírito da poeira
+                    <br>
+                    <img src="./img/espirito.png" alt="espírito da poeira">
+                </td>
+                <td><span id="espiritoDaPoeiraValue">0%</span> (<span id="espiritoDaPoeiraPoints">0</span>/500)</td>
+                <td>
+                    <button onclick="updateQuantity('espiritoDaPoeira', 1)">▲</button>
+                    <span id="espiritoDaPoeiraQuantity">0</span>
+                    <button onclick="updateQuantity('espiritoDaPoeira', -1)">▼</button>
+                </td>
+                <tr>
+                <td>
+                    Caranguejo-pedra
+                    <br>
+                    <img src="./img/caranguejo.png" alt="caranguejo-pedra">
+                </td>
+                <td><span id="caranguejoPedraValue">0%</span> (<span id="caranguejoPedraPoints">0</span>/60)</td>
+                <td>
+                    <button onclick="updateQuantity('caranguejoPedra', 1)">▲</button>
+                    <span id="caranguejoPedraQuantity">0</span>
+                    <button onclick="updateQuantity('caranguejoPedra', -1)">▼</button>
+                </td>
+                <tr>
+                <td>
+                    Múmia
+                    <br>
+                    <img src="./img/mumia.png" alt="múmia">
+                </td>
+                <td><span id="mumiaValue">0%</span> (<span id="mumiaPoints">0</span>/100)</td>
+                <td>
+                    <button onclick="updateQuantity('mumia', 1)">▲</button>
+                    <span id="mumiaQuantity">0</span>
+                    <button onclick="updateQuantity('mumia', -1)">▼</button>
+                </td>
+                <tr>
+                <td>
+                    Pimenta Rex
+                    <br>
+                    <img src="./img/rex.png" alt="pimenta rex">
+                </td>
+                <td><span id="pimentaRexValue">0%</span> (<span id="pimentaRexPoints">0</span>/50)</td>
+                <td>
+                    <button onclick="updateQuantity('pimentaRex', 1)">▲</button>
+                    <span id="pimentaRexQuantity">0</span>
+                    <button onclick="updateQuantity('pimentaRex', -1)">▼</button>
+                </td>
+                <tr>
+                <td>
+                    Serpente
+                    <br>
+                    <img src="./img/serpente.png" alt="serpente">
+                </td>
+                <td><span id="serpenteValue">0%</span> (<span id="serpentePoints">0</span>/250)</td>
+                <td>
+                    <button onclick="updateQuantity('serpente', 1)">▲</button>
+                    <span id="serpenteQuantity">0</span>
+                    <button onclick="updateQuantity('serpente', -1)">▼</button>
+                </td>
+                <tr>
+                <td>
+                    Espírito de Magma
+                    <br>
+                    <img src="./img/espirito.png" alt="espírito de magma">
+                </td>
+                <td><span id="espiritoDeMagmaValue">0%</span> (<span id="espiritoDeMagmaPoints">0</span>/150)</td>
+                <td>
+                    <button onclick="updateQuantity('espiritoDeMagma', 1)">▲</button>
+                    <span id="espiritoDeMagmaQuantity">0</span>
+                    <button onclick="updateQuantity('espiritoDeMagma', -1)">▼</button>
+                </td>
+                <tr>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
